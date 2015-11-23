@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>监听rem</title>
+		<script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="xiangyingshi.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		html {
+			font-size: 16px;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		@media only screen and (max-width: 320px) {
+			html {
+				font-size: 16px !important;
+			}
+		}
+		
+		@media only screen and (min-width: 1920px) {
+			html {
+				font-size: 96px !important;
+			}
+		}
+		/*img修饰*/
+		img{
+			display: block;
+			width: 20rem;
+			margin: auto;
+		}
+	</style>
+	<body>
+		<img src="1.jpg"/>
+		<p style="font-size: 1rem;">最小分辨率时和font-size的比要和最大分辨率时和font-size的比一样</p>
+	</body>
+</html>
